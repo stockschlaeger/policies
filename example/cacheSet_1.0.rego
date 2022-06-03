@@ -1,3 +1,3 @@
 package example.cacheSet
 
-res = cache.set(input.key, input.namespace, input.scope, input.data)
+res = cache.set("key", "namespace", "scope", input)
