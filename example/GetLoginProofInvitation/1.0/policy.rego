@@ -2,9 +2,9 @@ package example.GetLoginProofInvitation
 
 # commented until OCM ready with their enpoints
 
-# Don't worry, it will make only one http request, it caches by rego		            
-# requestId := http.send({"method": "get", "url": "<ocm endpoint>"}).body.data.presentation_id        
-# link := http.send({"method": "get", "url": "<ocm endpoint>"}).body.data.presentationMessage
+# ocm.loginProofInviation should be a custom function written in Go
+# requestId := ocm.loginProofInvitation().data.presentation_id        
+# link := ocm.loginProofInvitation().data.presentationMessage
 
 
 # for now returning mock
