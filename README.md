@@ -13,6 +13,10 @@ You should follow the following naming syntax:
 - Data file could be added for each policy. It must be named `data.json` and placed in the same directory:
     > Example: `{group}/{policyName}/{version}/data.json`
 
+## Dependencies
+
+[Dependencies](go.mod)
+
 ## License
 <hr/>
 
