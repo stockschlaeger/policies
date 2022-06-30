@@ -18,6 +18,5 @@ You should follow the following naming syntax:
 [Dependencies](go.mod)
 
 ## License
-<hr/>
 
 [Apache 2.0 license](LICENSE)
