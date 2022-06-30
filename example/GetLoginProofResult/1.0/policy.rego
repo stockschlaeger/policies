@@ -13,7 +13,7 @@ _ = {
     "given_name": "John I",
     "family_name": "Doe",
     "middle_name": "",
-    "preferred_name": "John Doe",
+    "preferred_username": "John Doe",
     "gender": "M",
     "birthdate": "01.01.1970",
     "upated_at": 1656497093,
