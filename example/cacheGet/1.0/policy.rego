@@ -2,4 +2,4 @@ package example.cacheGet
 
 default allow = false
 
-result := cache.get("mykey", "mynamespace", "myscope")
+result := cache.get(input.key, data.namespace, data.scope)
