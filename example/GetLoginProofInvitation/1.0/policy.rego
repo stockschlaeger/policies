@@ -8,5 +8,6 @@ package example.GetLoginProofInvitation
 
 
 # for now returning mock
-requestId := "00cc81d3-5cb6-449d-ab21-73770982e8f9"
+requestId := uuid.rfc4122("client_id")
 link := "https://picsum.photos/id/237/200/300"
+
