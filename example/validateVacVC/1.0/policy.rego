@@ -22,7 +22,7 @@ valid = semanticallyValid(input)
 semanticallyValid(i) = res {
 	now:=time.now_ns()
 	vac:= data.vaccines[i.credentialSubject.vaccine.vacCode].active == true
-    vacDate:=time.parse_ns("2006-01-02T15:04:05Z07:00",i.credentialSubject.dateOfVaccination)
-    vacStillValid:=now < (vacDate+15552000000000000)
+	vacDate:=time.parse_ns("2006-01-02T15:04:05Z07:00",i.credentialSubject.dateOfVaccination)
+	vacStillValid:=now < (vacDate+15552000000000000)
 	res := vac == vacStillValid
 }
