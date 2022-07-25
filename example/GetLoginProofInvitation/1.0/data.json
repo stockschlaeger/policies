@@ -1,6 +1,6 @@
 {
   "scopes": {
-    "openid": "principalMembershipCredential",
+    "openid": "principalMemberCredential",
     "profile": "universityCert",
     "email": "emailScope"
   }
