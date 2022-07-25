@@ -1,0 +1,7 @@
+{
+  "scopes": {
+    "openid": "principalMembershipCredential",
+    "profile": "universityCert",
+    "email": "emailScope"
+  }
+}
