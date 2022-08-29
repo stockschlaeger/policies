@@ -16,13 +16,13 @@ iss = getIss(claims)
 auth_time = getAuthTime(claims)
 
 getName(c) = x {
-	x = c.first_name
+	x = c.EmpFirstName
 }
 getGivenName(c) = x {
-	x = c.first_name
+	x = c.EmpFirstName
 }
 getFamilyName(c) = x {
-	x = c.last_name
+	x = c.EmpLastName
 }
 getMiddleName(c) = x {
 	x = c.EmpMiddleName
@@ -43,10 +43,10 @@ getEmailVerified(c) = x {
 	x = c.email_verified
 }
 getSub(c) = x {
-	x = c.sub
+	x = c.subjectDID
 }
 getIss(c) = x {
-	x = c.iss
+	x = c.issuerDID
 }
 getAuthTime(c) = x {
 	x = c.auth_time
