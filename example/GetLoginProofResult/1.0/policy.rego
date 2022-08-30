@@ -2,6 +2,17 @@ package example.GetLoginProofResult
 
 claims := ocm.getLoginProofResult(input.requestId)
 
+default name = ""
+default given_name = ""
+default family_name = ""
+default middle_name = ""
+default preferred_username = ""
+default gender = ""
+default birthdate = ""
+default email = ""
+default sub = ""
+default iss = ""
+
 name = getName(claims)
 given_name = getGivenName(claims)
 family_name = getFamilyName(claims)
