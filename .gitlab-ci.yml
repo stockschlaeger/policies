@@ -13,7 +13,7 @@ build:
     BRANCH: "dev"
 
   script:
-    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@code.vereign.com/gaiax/tsa/policy sync
+    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/gaia-x/data-infrastructure-federation-services/tsa/policy sync
     - cd sync/cmd/sync
     - go build
     - ./sync -repoURL "${REPO_URL}" -repoUser "${REPO_USER}" -repoPass "${REPO_PASS}" -dbAddr "${DB_ADDR}" -dbUser "${DB_USER}" -dbPass "${DB_PASS}" -branch "${BRANCH}"
