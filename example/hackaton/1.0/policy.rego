@@ -1,7 +1,10 @@
 package example.hackaton
 
+import future.keywords.in
+
 default result = false
 
 result {
-    input.message == "hackaton"
+    user := input.user
+    user in data.admins
 }
