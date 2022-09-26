@@ -1,3 +1,7 @@
 package example.hackaton
 
-resutt := "Hello World"
+default result = false
+
+result {
+    input.message == "hackaton"
+}
