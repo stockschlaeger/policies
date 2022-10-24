@@ -1,5 +1,5 @@
 package example.getMultiHeaders
 
 key = input.headers["X-Cache-Key"]
-host = input.headers["Host"]
+another = input.headers["X-Another-Header"]
 
