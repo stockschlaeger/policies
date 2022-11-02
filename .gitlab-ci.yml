@@ -1,0 +1,24 @@
+image: golang:latest
+stages:
+  - build
+build:
+  stage: build
+  variables:
+    DB_ADDR: "mongodb://localhost:27017/policy"
+    DB_USER: "user"
+    DB_PASS: "password"
+    REPO_URL: "https://path/to/repo.git"
+    REPO_USER: "gitlab-ci-token"
+    REPO_PASS: "${CI_JOB_TOKEN}"
+    BRANCH: "dev"
+
+  script:
+    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/gaia-x/data-infrastructure-federation-services/tsa/policy sync
+    - cd sync/cmd/sync
+    - go build
+    - ./sync -repoURL "${REPO_URL}" -repoUser "${REPO_USER}" -repoPass "${REPO_PASS}" -dbAddr "${DB_ADDR}" -dbUser "${DB_USER}" -dbPass "${DB_PASS}" -branch "${BRANCH}"
+  tags:
+    - deployment
+    - kubernetes-cluster-google-gaiax-staging
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
