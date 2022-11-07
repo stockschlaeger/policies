@@ -4,6 +4,6 @@
   "period": "10h",
   "body": {
     "key": "value",
-    "foo": "bar"
+    "foo": "baz"
   }
 }
