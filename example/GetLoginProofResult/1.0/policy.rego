@@ -16,25 +16,25 @@ iss = getIss(claims)
 auth_time = getAuthTime(claims)
 
 getName(c) = x {
-	x = c.EmpFirstName
+	x = c.prcFirstName
 }
 getGivenName(c) = x {
-	x = c.EmpFirstName
+	x = c.prcFirstName
 }
 getFamilyName(c) = x {
-	x = c.EmpLastName
+	x = c.prcLastName
 }
 getMiddleName(c) = x {
-	x = c.EmpMiddleName
+	x = c.prcMiddleName
 }
 getPreferredUsername(c) = x {
-	x = c.EmpPreferredUsername
+	x = c.prcPreferredUsername
 }
 getGender(c) = x {
-	x = c.EmpGender
+	x = c.prcGender
 }
 getBirthdate(c) = x {
-	x = c.EmpBirthdate
+	x = c.prcBirthdate
 }
 getEmail(c) = x {
 	x = c.email
