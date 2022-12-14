@@ -1,5 +1,4 @@
 package example.getMultiHeaders
 
-key = input.headers["X-Cache-Key"]
-another = input.headers["X-Another-Header"]
-
+key := external.http.header("X-Cache-Key")
+another := external.http.header("X-Another-Header")
