@@ -6,6 +6,3 @@ currentPrice := cache.get(input.key, "", "").currentPrice
 buy {
   currentPrice < 100
 }
-
-
-
